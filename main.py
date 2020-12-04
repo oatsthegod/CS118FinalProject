@@ -28,7 +28,7 @@ hotel_list = list(hotel_with_price.keys())  # making a list of the hotel names
 temp_save = list()
 temp_save.append(30)
 permutations_of_hotel_name = combinations_with_replacement(hotel_list, len(hotel_list))
-for combination_hotel in list(permutations_of_hotel_name):  # for loop to create combinations of hotels
+for combination_hotel in list(permutations_of_hotel_name):  # for loop to create list of combinations of hotels
     temp_list_hotel = list(combination_hotel)
     temp_list_hotel = temp_list_hotel[:-1]
 
@@ -71,7 +71,7 @@ if number_of_max_temps:
         # temp of all cities
 
         temp_list_for_max_temperature.append(average_temp_list)
-        if len(temp_list_for_max_temperature) != 1:  # when the list is not empty it will run the below code
+        if len(temp_list_for_max_temperature) != 1:  # when the list is longer than 1 or empty
             max_temp = max(temp_list_for_max_temperature)  # max temperature is the maximum of the temp list
             if max_temp == average_temp_list:  # if the max temp list is equal to the avg temp list
                 final_max_temp = average_temp_list  # that is the highest average temperature
