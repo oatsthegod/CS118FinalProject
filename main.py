@@ -27,7 +27,7 @@ hotel_list = list(hotel_with_price.keys())  # making a list of the hotel names
 
 temp_save = list()
 temp_save.append(30)
-permutations_of_hotel_name = combinations_with_replacement(hotel_list, len(hotel_list))
+permutations_of_hotel_name = combinations_with_replacement(hotel_list, len(city_with_temp)+1)
 for combination_hotel in list(permutations_of_hotel_name):  # for loop to create list of combinations of hotels
     temp_list_hotel = list(combination_hotel)
     temp_list_hotel = temp_list_hotel[:-1]
